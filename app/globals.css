@@ -1,27 +1,90 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.white{
+  color: white;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+
+.arrow {
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  transform: translateX(-15px);
+  /* Initially move it off-screen to the left */
+  opacity: 0;
+  /* Initially hide it */
+  transition: transform 0.3s ease-in-out, opacity 0.1s ease-in,padding-left 0.3s;
+  /* Separate transitions */
 }
+
+.button_slide:hover .arrow {
+  transform: translateX(0);
+  /* Slide it in from the left */
+  opacity: 1;
+  /* Make it visible quickly */
+}
+
+
+.btn {
+  background-color: transparent;
+  color: #222;
+  padding: .5em 1em;
+  border: 1px solid black;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+
+
+  --background-color: transparent;
+  --border-size: 1px;
+  --accent-color: #171513;
+}
+.btn.btn-background-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: var(--accent-color);
+  
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.btn.btn-background-slide:hover::before,
+.btn.btn-background-slide:focus::before {
+  /* border-radius: 25px; */
+  transform: scaleX(1);
+}
+
+.btn.btn-background-slide {
+  transition: color 300ms ease-in-out;
+  z-index: 1;
+}
+
+
+.btn.btn-background-slide:hover,
+.btn.btn-background-slide:focus {
+  border: 0px;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
