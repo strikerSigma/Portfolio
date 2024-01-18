@@ -26,11 +26,11 @@ const About = () => {
             <FaArrowRightLong  className={` text-[#FFFFFF]  mt-0 arrow`}/>
         </button>
         </div>
-        <div className=' md:pt-12 ml-5 mr-16 '>
+        <div className=' md:pt-12 ml-5 mr-16 lg:mr-48 lg:ml-16 '>
             <span className='text-[#FFFFFF]  text-[30px] font-extrabold md:hidden'>
                 About Me</span>
             <span className='text-primary  text-[30px] font-extrabold md:hidden '>:</span>
-            <img src='../../Mypic.webp' alt="Picture of Me" className='md:w-[2000px] w-[300px] mt-16 md:mt-0 ml-7'/>
+            <img src='../../Mypic.webp' alt="Picture of Me" className='lg:w-[1000px] md:w-[2000px] w-[300px] mt-16 md:mt-0 ml-7'/>
         </div>
     </div>
   )
