@@ -24,7 +24,7 @@ export default function Home() {
       <Nav state={{menu,setMenu}} />
       <Hero menu={menu}/>
      </div>
-      <div >
+      <div className={`${menu ? 'hidden': ''}`}>
      <About/>
      <Skills/>
      <Projects/>

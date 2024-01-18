@@ -11,8 +11,8 @@ const Nav = ({state}) => {
   
 // },[state.menu])
 // const lock = () =>{if(state){useLockBodyScroll()}}
-if(state.menu){document.body.style.overflow = "hidden";}
-else {document.body.style.overflow = "scroll"}
+// if(state.menu){document.body.style.overflow = "hidden";}
+// else {document.body.style.overflow = "scroll"}
   return (
     <div className={`relative ${state.menu ? 'fixed': ''}`}>
         <div className={`z-0 absolute ${state.menu ? '': 'hidden'} bg-secondary z-90 w-[1000px] h-[10000px]`}>
