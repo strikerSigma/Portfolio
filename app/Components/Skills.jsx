@@ -16,7 +16,7 @@ const Skills = () => {
                 Javascript, Python and Golang that include 
                 authentification, catalog management, validation,
                 handling media files and so on. On the frontend side
-                I can utilize react/next js to build responsive Ui's.
+                I can utilize react/next js to build responsive Ui&apos;s.
         </div>
         <div className='flex justify-center px-12 md:px-28 mb-12'>
         <div className='flex flex-wrap flex-row md:space-x-20'>
