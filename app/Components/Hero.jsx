@@ -7,6 +7,7 @@ const Hero = ({menu}) => {
 
   return (
     <div className='relative'>
+        
         <div className='absolute bg-primary w-5/6 h-[341px] right-20 hidden md:block'>
             <div className='text-[#F7F7F733] opacity-30 font-extrabold relative'>
                 <p className='text-[70px] absolute right-0 top-5'>MERN STACK DEVEL</p>

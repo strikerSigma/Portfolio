@@ -14,7 +14,7 @@ const Nav = ({state}) => {
 // if(state.menu){document.body.style.overflow = "hidden";}
 // else {document.body.style.overflow = "scroll"}
   return (
-    <div className={`relative ${state.menu ? 'fixed': ''}`}>
+    <div className={`relative ${state.menu ? 'fixed h-[800px]': ''}`}>
         <div className={`z-0 absolute ${state.menu ? '': 'hidden'} bg-secondary z-90 w-[1000px] h-[10000px]`}>
                 <ul className='text-[#F7EBDF] text-[20px] font-light p-5'>
                     <li className='rounded-lg bg-[#F7EBDF] w-[340px] h-[55px] mb-14 text-secondary font-semibold p-3'>
