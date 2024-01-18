@@ -12,6 +12,8 @@
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.4",
+    "@uidotdev/usehooks": "^2.4.1",
+    "body-scroll-lock": "^4.0.0-beta.0",
     "hamburger-react": "^2.5.0",
     "mui": "^0.0.1",
     "next": "14.0.4",

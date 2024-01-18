@@ -17,20 +17,21 @@ export default function Home() {
 
 
   return (
-    <>
+   
 
-<main className='w-full overflow-hidden'>
+<main className='w-full overflow-hidden '>
     <div className='p-0 m-0 pb-10 bg-primary md:bg-[#FFFFFF]'>
       <Nav state={{menu,setMenu}} />
       <Hero menu={menu}/>
      </div>
+      <div >
      <About/>
      <Skills/>
      <Projects/>
      <Contact/>
      <Footer/>
+     </div>
 </main>
-</>
   )
 }
 

@@ -1,15 +1,20 @@
-"use client"
+
 
 import Hamburger from 'hamburger-react'
+import { useLockBodyScroll } from "@uidotdev/usehooks";
+import { useEffect } from 'react';
 
 const Nav = ({state}) => {
 
-
-
-    if(state.menu){document.body.style.overflow = "hidden";}
-    else{ document.body.style.overflow = "scroll";}
+// useEffect(()=>{
+//     lock();
+  
+// },[state.menu])
+// const lock = () =>{if(state){useLockBodyScroll()}}
+if(state.menu){document.body.style.overflow = "hidden";}
+else {document.body.style.overflow = "scroll"}
   return (
-    <div className='relative'>
+    <div className={`relative ${state.menu ? 'fixed': ''}`}>
         <div className={`z-0 absolute ${state.menu ? '': 'hidden'} bg-secondary z-90 w-[1000px] h-[10000px]`}>
                 <ul className='text-[#F7EBDF] text-[20px] font-light p-5'>
                     <li className='rounded-lg bg-[#F7EBDF] w-[340px] h-[55px] mb-14 text-secondary font-semibold p-3'>
