@@ -16,7 +16,7 @@ const Hero = ({menu}) => {
         </div>
         <div className={`absolute font-extrabold white lg:left-[240px] md:left-[70px] left-[30px] top-[100px] ${menu? 'hidden': ''}`}>
             <span className='block md:text-[96px] text-[64px]'>Hi,</span>
-            <span className='md:text-[60px] text-[36px]'>I'm Ibrahim</span>
+            <span className='md:text-[60px] text-[36px]'>I&apos;m Ibrahim</span>
             <span className='block md:text-[60px] text-[36px] text-secondary'>A Full Stack Developer</span>
         </div>
         <div className={`md:pt-[450px] pt-[370px] lg:pl-[200px] pl-[35px] w-3/5 md:pl-[80px] flex flex-col md:block ${menu? 'hidden': ''}`}>

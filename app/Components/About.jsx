@@ -12,7 +12,7 @@ const About = () => {
                 About Me</span>
             <span className='text-primary  text-[30px] font-extrabold hidden md:inline'>:</span>
             <p className='text-[#FFFFFF]  font-light md:ml-10 pt-8 pr-10 md:pr-4'>
-                I'm a web developer who blends creativity, 
+                I&apos;m a web developer who blends creativity, 
                 code, and stunning Ui to craft digital experiences that
                 connect and inspire. My passion for engineering and coding
                 led me to pursue undergrad in Electrical
