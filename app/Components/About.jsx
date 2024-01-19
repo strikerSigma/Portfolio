@@ -4,9 +4,10 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import Image from 'next/image'
 import Mypic from '@/public/Mypic.webp'
 
-const About = () => {
+const About = ({state}) => {
   return (
-    <div className='w-full md:h-[600px] md:pl-[140px] h-[1200px]  md:pt-16 bg-secondary flex flex-col-reverse md:flex-row '>
+    <div    ref={state.about} 
+    className='w-full md:h-[600px] md:pl-[140px] h-[1200px]  md:pt-16 bg-secondary flex flex-col-reverse md:flex-row '>
         <div className='pl-16 md:pl-0 pt-14 md:pt-0'>
             <span className='text-[#FFFFFF]  text-[30px] font-extrabold hidden md:inline'>
                 About Me</span>

@@ -1,9 +1,16 @@
-import React from 'react'
+"use client"
+import React,{useEffect} from 'react'
 import { FaGithub } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 
 const Contact = () => {
+const fetcher = async() =>{ const res = await fetch('/Api/HandleMail');
+return res;}
+   useEffect(() => {
+    const res = fetcher().then((e)=>e.json())
+    console.log(res)
+   },[])
   return (
     <div className='md:bg-[#FFFFFF] bg-primary flex justify-center'>
         <div className='flex mt-10 '>
